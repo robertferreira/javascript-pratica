@@ -5,10 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Exercicio </title>
+    <style>
+        div#area {
+            font: bold 25pt Arial;
+            background-color: rgb(185, 255, 185);
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
 </head>
 <body>
-    <div id="'area">
-        Interaja
+    <div id="area">
+        Interaja...
     </div>
+    <script>
+        var area = window.document.querySelector('div#area');
+        area.addEventListener('click', clicar);
+        area.addEventListener('mouseenter', entrar);
+        area.addEventListener('mouseout', sair);
+
+        function clicar(){        
+            area.innerText = 'Clicou!';
+            area.style.backgroundColor = 'green';
+        }
+        function entrar(){
+            area.innerText = 'Entrou!';
+            area.style.backgroundColor = 'cyan';
+        }
+        function sair(){
+            area.innerText = 'Saiu!';
+            area.style.backgroundColor = 'red';
+        }
+    </script>
 </body>
 </html>
