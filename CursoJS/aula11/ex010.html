@@ -11,15 +11,37 @@
             font: normal 15pt Arial;
             background-color: rgb(169, 235, 255);
         }
+
+        div#res{
+            padding-top: 20px;
+        }
     </style>
 </head>
 <body>
     <div>
         <h1> Sistema de Multas </h1>
-        <input type="number" name="txtvel" id="txtvel">
+        Velocidade do Carro: <input type="number" name="txtvel" id="txtvel"> Km/h
+        <input id="button" type="button" value="Verificar"> 
+        <div id="res"> Resultado </div>
     </div>
     <script>
+        var button = window.document.getElementById('button');
+        button.addEventListener('click', calcular);
 
+        function calcular(){
+            var res = document.getElementById('res');
+            var txtv = window.document.getElementById('txtvel');
+            var vel = Number(txtv.value);
+
+            res.innerHTML = `Sua velocidade atual é de ${vel}Km/h`;
+
+            if (vel > 60) {
+                res.innerHTML += '<p> Você foi <b> MULTADO </b> por excesso de velocidade! </p>'
+            }
+            else{
+                res.innerHTML += '<p> Você está dentro do limite de velocidade. </p>'
+            }
+        }
     </script>
 </body>
 </html>
