@@ -12,7 +12,7 @@ section {
     background-color: white;
     padding: 15px;
     border-radius: 20px;
-    width: 500px;
+    width: 600px;
     margin: auto;
     box-shadow: #a8a8a8 1px 1px 5px;
 }
@@ -20,4 +20,15 @@ section {
 footer {
     text-align: center;
     font-style: italic;
+}
+
+div {
+    text-align: center;
+    padding: 10px;
+}
+
+div#foto img{
+    border-radius: 100%;
+    width: auto;
+    text-align: center;
 }
