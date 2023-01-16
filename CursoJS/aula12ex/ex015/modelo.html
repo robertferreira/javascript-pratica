@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,32 @@
     <title> Exercicio </title>
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body onload="carregar()">
     <header>
         <h1> Hora do Dia </h1>
     </header>
     <section>
-        <div id="img">
-            Aqui vai aparecer a mensagem...
+        <div>
+            <p> Escolha sua hora do dia favorita: </p>
+            <div>
+                <input type="radio" name="hora_do_dia" id="manha">
+                <label for="manha"> Manhã </label>
+            </div>
+            <div>
+                <input type="radio" name="hora_do_dia" id="tarde">
+                <label for="tarde"> Tarde </label>
+            </div>
+            <div>
+                <input type="radio" name="hora_do_dia" id="noite">
+                <label for="noite"> Noite </label>
+            </div>
+            <div>
+                <input type="button" value="Confirmar" onclick="confirmar()">
+            </div>
         </div>
         <div id="foto">
-            <img src="manha.jpg" id="imagem" alt="" srcset="">
+            <img src="" id="imagem" alt="" srcset="">
         </div>
     </section>
     <footer>
@@ -24,4 +41,5 @@
     </footer>
     <script src="javascript.js"></script>
 </body>
+
 </html>

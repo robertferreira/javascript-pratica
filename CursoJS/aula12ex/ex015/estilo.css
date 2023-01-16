@@ -23,8 +23,11 @@ footer {
 }
 
 div {
-    text-align: center;
     padding: 10px;
+}
+
+div#foto{
+    text-align: center;
 }
 
 div#foto img{
