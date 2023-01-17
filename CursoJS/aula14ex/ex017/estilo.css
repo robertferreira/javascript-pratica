@@ -17,6 +17,10 @@ section {
     box-shadow: #a8a8a8 1px 1px 5px;
 }
 
+div {
+    padding: 10px;
+}
+
 footer {
     text-align: center;
     font-style: italic;
