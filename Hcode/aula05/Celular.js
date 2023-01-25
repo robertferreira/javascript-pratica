@@ -1,4 +1,4 @@
-class celular {
+class Celular {
 
     constructor(){
         this.cor = "Prata";
@@ -6,6 +6,6 @@ class celular {
     }
 }
 
-let objeto = new celular();
+let celular = new Celular();
 
-console.log(objeto);
+console.log(celular);
