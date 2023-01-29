@@ -63,13 +63,12 @@ class CalcController {
                 this._operation.push(value);
             }
 
-        } else {
+        }
+        else {
             let newValue = this.getLastOperation().toString() + value.toString();
             this._operation.push(newValue);
         }
-
-
-        this._operation.push(value);
+        
         console.log(this._operation);
     }
 
