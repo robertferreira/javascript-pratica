@@ -40,6 +40,10 @@ class CalcController {
         this._operation.pop();
     }
 
+    getLastOperation(){
+        return this._operation[this._operation.length-1];
+    }
+
     addOperation(value) {
         this._operation.push(value);
         console.log(this._operation);
@@ -74,6 +78,9 @@ class CalcController {
 
                 break;
             case 'igual':
+
+                break;
+            case 'ponto':
 
                 break;
             case '0':
