@@ -171,7 +171,7 @@ class CalcController {
                 this.addOperation('%');
                 break;
             case 'igual':
-                this.addOperation('=');
+                this.calc();
                 break;
             case 'ponto':
                 this.addOperation('.');
