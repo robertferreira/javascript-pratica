@@ -1,22 +1,34 @@
 var ingredientes = ['mel', 'água', 'sal', 'mostarda'];
 
-var modificado = [];
+function capitalizar(ingredientes) {
 
-for (var i=0; i < ingredientes.length; i++){
+    var modificado = [];
 
-    var letraInicial = ingredientes[i].charAt(0).toUpperCase();
+    for (var i = 0; i < ingredientes.length; i++) {
 
-    var restoTexto = ingredientes[i].slice(1);
+        var letraInicial = ingredientes[i].charAt(0).toUpperCase();
 
-    var resultado = letraInicial + restoTexto;
+        var restoTexto = ingredientes[i].slice(1);
 
-    modificado[i] = resultado;
+        var resultado = letraInicial + restoTexto;
 
-    console.log(modificado);
+        modificado[i] = resultado;
+    }
+
+    return modificado;
 }
 
-var ordenado = modificado.sort((a,b) => {
-    return a.localeCompare(b);
-});
+function ordenar(ingredientes) {
 
-console.log(ordenado);
+    return ingredientes.sort((a, b) => {
+        return a.localeCompare(b);
+    });
+}
+
+
+
+var resultadoCapitalizado = (capitalizar(ingredientes));
+var resultadoOrdenacao = (ordenar(resultadoCapitalizado));
+
+console.log(resultadoCapitalizado);
+console.log(resultadoOrdenacao);
