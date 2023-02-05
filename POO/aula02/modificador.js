@@ -1,3 +1,11 @@
+function fnCapitalizarNovo(colecao, atributo){
+    console.log(typeof colecao[0]);
+    
+    if (typeof colecao[0] == 'object'){
+
+    }
+}
+
 function fnCapitalizar(vetor) {
 
     var modificado = [];
@@ -35,6 +43,7 @@ function fnCaixaAlta(vetor){
 
 export default {
     capitalizar: fnCapitalizar,
+    capitalizarNovo: fnCapitalizarNovo,
     ordenar: fnOrdenar,
     caixaAlta: fnCaixaAlta
 };
