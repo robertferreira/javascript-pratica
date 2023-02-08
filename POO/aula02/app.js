@@ -1,8 +1,8 @@
 import modificador from './modificador.js';
 import ingredientes from './ingredientes.js';
 
-modificador.capitalizar(ingredientes, 'nome');
-let ingredientesOrdenados = modificador.ordenar(ingredientes, 'nome');
+let ingredientesMaiusculo = modificador.capitalizar(ingredientes, 'nome');
+let ingredientesOrdenados = modificador.ordenar(ingredientesMaiusculo, 'nome');
 
 let containerIngredientes = document.getElementById('container-ingredientes');
 
