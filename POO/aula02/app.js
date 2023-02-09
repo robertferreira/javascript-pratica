@@ -17,3 +17,4 @@ ingredientesOrdenados.forEach(element => {
     containerIngredientes.innerHTML += textoHTML;
 });
 
+
