@@ -19,4 +19,8 @@ export class Carro{
         console.log('---------------------');
         
     }
+
+    set setCor(cor){
+        this.cor = cor;
+    }
 }
