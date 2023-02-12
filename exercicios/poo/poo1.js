@@ -1,11 +1,15 @@
-export default class Carro{
-    constructor(){
-        this.nome = 'Robert';
-    }
-}
+export class Carro{
 
-export class Teste {
-    constructor(){
-        this.nomeNovo = 'Robert2';
+    constructor(marca, modelo, cor){
+        this.marca = marca;
+        this.modelo = modelo;
+        this.cor = cor;
+        this.ligado = false;
+        this.km = 0;
+        this.combustivel = 10;
+    }
+
+    info(){
+        console.log(`A cor do carro é: ${this.cor}`);
     }
 }
