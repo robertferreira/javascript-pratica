@@ -10,6 +10,13 @@ export class Carro{
     }
 
     info(){
-        console.log(`A cor do carro é: ${this.cor}`);
+        console.log(`Marca......: ${this.marca}`);
+        console.log(`Modelo.....: ${this.modelo}`);
+        console.log(`Cor........: ${this.cor}`);
+        console.log(`Ligado.....: ${this.ligado}`);
+        console.log(`Km.........: ${this.km}`);
+        console.log(`Combustivel: ${this.combustivel}`);
+        console.log('---------------------');
+        
     }
 }

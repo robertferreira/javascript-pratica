@@ -1,11 +1,9 @@
 import {Carro} from './poo1.js';
 
-let c1 = new Carro('Vermelho');
-let c2 = new Carro('Verde');
-let c3 = new Carro('Azul');
-let c4 = new Carro('Amarelo');
-
-c1.cor = 'Preto';
+let c1 = new Carro('Honda', 'HRV','Prata');
+let c2 = new Carro('VW', 'Golf', 'Branco');
+let c3 = new Carro('GM', 'Camaro', 'Preto');
+let c4 = new Carro('Ford', 'Mustang','Vermelho');
 
 c1.info();
 c2.info();
