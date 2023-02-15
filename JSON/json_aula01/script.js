@@ -22,3 +22,10 @@ const objs = [
 ]
 
 console.log(objs);
+
+// converter OBJETOS para STRING JSON (componentes do ARRAY viram STRING)
+const jsonData = JSON.stringify(objs);
+
+// converter STRING para OBJETO JSON (componentes da STRING viram ARRAY)
+const objData = JSON.parse(jsonData);
+
