@@ -1,0 +1,16 @@
+{
+    "nome": "Robert",
+    "idade": 21,
+    "esta_trabalhando": true,
+    "hobbies": [
+        "Séries",
+        "Filmes",
+        "Jogos",
+        "Estudo",
+        "Programação"
+    ],
+    "detalhes_profissao": {
+        "profissao": "Técnico de Informática",
+        "empresa": "Caliman's Comércio de Artesanato"
+    }
+}
