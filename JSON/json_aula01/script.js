@@ -29,3 +29,6 @@ const jsonData = JSON.stringify(objs);
 // converter STRING para OBJETO JSON (componentes da STRING viram ARRAY)
 const objData = JSON.parse(jsonData);
 
+objData.map((pessoa) => {
+    console.log(pessoa.nome);
+})
