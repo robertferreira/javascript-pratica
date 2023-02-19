@@ -11,3 +11,5 @@ request.onload = function() {
     populateHeader(superHeroes);
     showHeroes(superHeroes);
   }
+
+  console.log(superHeroes);
