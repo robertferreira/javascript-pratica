@@ -21,8 +21,12 @@ function App() {
       super(props);
 
       this.state = {
+        labelText: '',
+      };
+    }
 
-      }
+    setLabelText = (labelText) => {
+      this.setState({ labelText});
     }
 
     render() {
@@ -30,10 +34,10 @@ function App() {
         <div className='App'>
           <p> Hello, World!</p>
           <MyLabel text="Escrevendo pelo app" />
-          <MyButton label="Botão 1" />
-          <MyButton label="Botão 2" />
-          <MyButton label="Botão 3" />
-          <MyButton label="Botão 4" />
+          <MyButton handleClicl={this.setLabelText} label="Botão 1" />
+          <MyButton handleClicl={this.setLabelText} label="Botão 2" />
+          <MyButton handleClicl={this.setLabelText} label="Botão 3" />
+          <MyButton handleClicl={this.setLabelText} label="Botão 4" />
         </div>
       );
     }
