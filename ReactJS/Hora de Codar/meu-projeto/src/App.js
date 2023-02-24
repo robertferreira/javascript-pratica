@@ -1,4 +1,5 @@
 import './App.css';
+import HelloWorld from './components/HelloWorld.js';
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
       <p> Olá, {name}</p>
       <p> Soma: {sum(2,2)}</p>
       <img src={url} alt="Minha Imagem" />
+      <HelloWorld/>
     </div>
     
   );
