@@ -4,6 +4,7 @@ function Form() {
 
     function cadastrarUsuario(e){
         e.preventDefault();
+        console.log(name);
         console.log('Cadastrou o usuário!');
     }
 
@@ -20,6 +21,7 @@ function Form() {
                     name="name"
                     id="name"
                     placeholder="Digite o seu nome"
+                    onChange={(e) => setName (e.target.value)}
                     />
                 </div>
                 <div>
