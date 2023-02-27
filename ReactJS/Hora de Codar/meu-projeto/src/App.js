@@ -1,10 +1,11 @@
 import './App.css';
 import Form from './components/Form';
-import Button from './components/evento/Button';
+import Evento from './components/Evento';
 
 function App() {
   return (
     <div className="App">
+    <Evento/>
     <Form/>
     </div>
   );
