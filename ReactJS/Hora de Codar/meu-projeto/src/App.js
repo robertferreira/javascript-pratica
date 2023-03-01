@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 import SeuNome from './components/SeuNome';
+import Saudacao from './components/Saudacao';
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
     <div className="App">
       <h1>State Lift</h1>
       <SeuNome setNome={setNome}/>
-      {nome}
+      <Saudacao nome={nome}/>
     </div>
   );
 }
