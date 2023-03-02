@@ -6,7 +6,7 @@ function Saudacao({nome}) {
 
     return(
         <>
-        {nome && <p>{gerarSaudacao(nome)}</p>}
+        
         </>
     )
 }
