@@ -13,15 +13,9 @@ function App() {
         <li><Link to="/contato"> Contato </Link></li>
       </ul>
       <Routes>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/empresa">
-          <Empresa />
-        </Route>
-        <Route path="/contato">
-          <Contato />
-        </Route>
+      <Route path='/' exact='true' element={<Home/>}></Route>
+            <Route path='/empresa' element={<Empresa/>}></Route>
+            <Route path='/contato' element={<Contato/>}></Route>
       </Routes>
     </Router>
   );
