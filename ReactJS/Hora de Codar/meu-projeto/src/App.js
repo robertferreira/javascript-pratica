@@ -6,7 +6,9 @@ function App() {
 
   return (
     <Router>
-      
+      <ul>
+        <li><Link to="/"> Home </Link></li>
+      </ul>
     </Router>
   );
 }
