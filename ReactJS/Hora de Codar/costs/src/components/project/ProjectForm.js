@@ -9,8 +9,11 @@ function ProjectForm() {
             </div>
             <div>
                 <select name="category_id">
-                    <option disabled> Selecione a categoria </option>
+                    <option disabled selected> Selecione a categoria </option>
                 </select>
+            </div>
+            <div>
+                <input type="submit" value="Criar projeto" />
             </div>
         </form>
     )
