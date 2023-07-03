@@ -5,6 +5,10 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/html/index.html");
 });
 
+app.get("/sobre", (req, res) => {
+  res.sendFile(__dirname + "/html/sobre.html");
+});
+
 app.get("/ola/:cargo/:nome", (req, res) => {
   res.send(req.params);
 });
