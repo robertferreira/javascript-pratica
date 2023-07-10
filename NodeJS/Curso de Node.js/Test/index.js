@@ -17,6 +17,10 @@ app.get("/cad", (req, res) => {
   res.render("formulario");
 });
 
+app.post("/add", (req, res) => {
+  res.send("Formulário Recebido");
+});
+
 app.listen(8081, () => {
   console.log("Servidor rodando!");
 });
