@@ -5,12 +5,16 @@ const Sequelize = require("sequelize");
 
 // Config
 // Template Engine
-app.engine("handlebars", handlebars({ defaultLayout: "main" }));
+app.engine("handlebars", handlebars.engine({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 // Conexão com o banco de dados MySQL
 const sequelize = new Sequelize("test", "root", "", {
   host: "localhost",
   dialect: "mysql",
+});
+// Rotas
+app.get("/cad", (req, res) => {
+  res.send("Rota de cadastro de Posts");
 });
 
 app.listen(8081, () => {
