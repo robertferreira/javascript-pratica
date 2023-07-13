@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 // Rotas
 
 app.get("/", (req, res) => {
-  req.render("home");
+  res.render("home");
 });
 
 app.get("/cad", (req, res) => {
