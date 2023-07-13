@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 // Rotas
 
-application.get("/", (req, res) => {
+app.get("/", (req, res) => {
   req.render("home");
 });
 
