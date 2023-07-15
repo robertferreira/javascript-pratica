@@ -6,7 +6,17 @@ const Post = require("./models/Posts");
 
 // Config
 // Template Engine
-app.engine("handlebars", handlebars.engine({ defaultLayout: "main" }));
+app.engine(
+  "handlebars",
+  handlebars.engine({
+    defaultLayout: "main",
+    runtimeOptions: {
+      allowProtoPropertiesByDefault: true,
+
+      allowProtoMethodsByDefault: true,
+    },
+  })
+);
 app.set("view engine", "handlebars");
 // Body Parser
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -14,7 +24,9 @@ app.use(bodyParser.json());
 // Rotas
 
 app.get("/", (req, res) => {
-  res.render("home");
+  Post.findAll().then((posts) => {
+    res.render("home", { posts: posts });
+  });
 });
 
 app.get("/cad", (req, res) => {
