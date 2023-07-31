@@ -1,10 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb://localhost:27017/aprendendo", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect("mongodb://localhost/aprendendo")
   .then(() => {
     console.log("MongoDB Conectado");
   })
