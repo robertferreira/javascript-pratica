@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb://localhost:27017/bancoTeste", {
+  .connect("mongodb://localhost:27017/teste", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -9,5 +9,5 @@ mongoose
     console.log("MongoDB Conectado");
   })
   .catch((erro) => {
-    console.log("Houve um erro ao se conectar ao MongoDB:");
+    console.log("Houve um erro ao se conectar ao MongoDB:" + erro);
   });
